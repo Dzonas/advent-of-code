@@ -1,0 +1,9 @@
+[package]
+name = "day4"
+version = "0.1.0"
+authors = ["Jan Cybulski"]
+
+[dependencies]
+regex = "1.1.0"
+chrono = "0.4.6"
+time = "0.1.41"
