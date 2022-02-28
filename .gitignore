@@ -6,3 +6,4 @@ target/
 *.hi
 *.o
 .stack-work/
+dist-newstyle/
