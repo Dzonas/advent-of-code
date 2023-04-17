@@ -39,6 +39,14 @@ fn main() {
 
             (part_1_solution, part_2_solution)
         }
+        (2022, 4) => {
+            use year_2022::day_04::{solve_part_1, solve_part_2};
+
+            let part_1_solution = solve_part_1(&input);
+            let part_2_solution = solve_part_2(&input);
+
+            (part_1_solution, part_2_solution)
+        }
         _ => panic!("Not solved yet"),
     };
 
