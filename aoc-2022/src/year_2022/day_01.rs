@@ -48,20 +48,38 @@ pub fn solve_part_2(input: &str) -> u32 {
 mod tests {
     use super::*;
 
-    const INPUT: &'static str =
+    const SAMPLE_INPUT: &'static str =
         "1000\n2000\n3000\n\n4000\n\n5000\n6000\n\n7000\n8000\n9000\n\n10000\n";
 
     #[test]
-    fn test_solve_part_1() {
-        let solution = solve_part_1(INPUT);
+    fn test_solve_part_1_on_sample_input() {
+        let solution = solve_part_1(SAMPLE_INPUT);
 
         assert_eq!(solution, 24000);
     }
 
     #[test]
-    fn test_solve_part_2() {
-        let solution = solve_part_2(INPUT);
+    fn test_solve_part_1_on_full_input() {
+        let input = include_str!("../../input/2022/01.txt");
+
+        let solution = solve_part_1(&input);
+
+        assert_eq!(solution, 71124);
+    }
+
+    #[test]
+    fn test_solve_part_2_on_sample_input() {
+        let solution = solve_part_2(SAMPLE_INPUT);
 
         assert_eq!(solution, 45000);
+    }
+
+    #[test]
+    fn test_solve_part_2_on_full_input() {
+        let input = include_str!("../../input/2022/01.txt");
+
+        let solution = solve_part_2(input);
+
+        assert_eq!(solution, 204639);
     }
 }

@@ -168,19 +168,37 @@ pub fn solve_part_2(input: &str) -> u32 {
 mod tests {
     use super::*;
 
-    const INPUT: &'static str = "A Y\nB X\nC Z\n";
+    const SAMPLE_INPUT: &'static str = "A Y\nB X\nC Z\n";
 
     #[test]
-    fn test_solve_part_1() {
-        let solution = solve_part_1(INPUT);
+    fn test_solve_part_1_on_sample_input() {
+        let solution = solve_part_1(SAMPLE_INPUT);
 
         assert_eq!(solution, 15);
     }
 
     #[test]
-    fn test_solve_part_2() {
-        let solution = solve_part_2(INPUT);
+    fn test_solve_part_1_on_full_input() {
+        let input = include_str!("../../input/2022/02.txt");
+
+        let solution = solve_part_1(input);
+
+        assert_eq!(solution, 14827);
+    }
+
+    #[test]
+    fn test_solve_part_2_on_sample_input() {
+        let solution = solve_part_2(SAMPLE_INPUT);
 
         assert_eq!(solution, 12);
+    }
+
+    #[test]
+    fn test_solve_part_2_on_full_input() {
+        let input = include_str!("../../input/2022/02.txt");
+
+        let solution = solve_part_2(input);
+
+        assert_eq!(solution, 13889);
     }
 }
