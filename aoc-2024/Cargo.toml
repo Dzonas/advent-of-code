@@ -10,3 +10,4 @@ name = "1"
 name = "2"
 
 [dependencies]
+regex = "1.11.1"
