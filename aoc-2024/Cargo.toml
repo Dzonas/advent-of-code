@@ -9,5 +9,17 @@ name = "1"
 [[bin]]
 name = "2"
 
+[[bin]]
+name = "3"
+
+[[bin]]
+name = "4"
+
+[[bin]]
+name = "5"
+
+[[bin]]
+name = "6"
+
 [dependencies]
 regex = "1.11.1"
